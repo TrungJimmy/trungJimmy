@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/giaodich"
+    android:title="Giao dịch"
+    android:icon="@drawable/ic_giaodich"/>
+
+    <item
+        android:id="@+id/baocao"
+        android:title="Báo cáo"
+        android:icon="@drawable/ic_baocao"/>
+
+    <item
+        android:id="@+id/them"
+        android:title="ADD"
+        android:icon="@drawable/ic_them"/>
+
+    <item
+        android:id="@+id/ngansach"
+        android:title="Ngân sách"
+        android:icon="@drawable/ic_ngansach"/>
+    <item
+        android:id="@+id/khac"
+        android:title="Khác"
+        android:icon="@drawable/ic_khac"/>
+
+</menu>
