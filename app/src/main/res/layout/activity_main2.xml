@@ -8,36 +8,7 @@
     android:id="@+id/main2_layout"
     android:orientation="vertical">
     <!-- our toolbar -->
-    <LinearLayout
-        android:id="@+id/tab_giaodich"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="5">
-        <Button
-            android:id="@+id/btnXacnhan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorXanhVl"
-            android:text="V" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:background="@color/colorXanhVl"
-            android:gravity="center"
-            android:text="THÊM GIAO DỊCH" />
-
-        <Button
-            android:id="@+id/btnHuy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorXanhVl"
-            android:text="X" />
-    </LinearLayout>
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

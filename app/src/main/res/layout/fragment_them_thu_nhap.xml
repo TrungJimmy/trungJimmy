@@ -5,9 +5,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ThemThuNhapFragment"
-    android:background="@color/colorXanhVlVuavuathoi">
+    android:background="@color/cardview_light_background">
 
+    <LinearLayout
+        android:id="@+id/tab_giaodich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <Button
+            android:id="@+id/btnXacnhanThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorXanhVl"
+            android:text="V" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/colorXanhVl"
+            android:gravity="center"
+            android:text="THÊM GIAO DỊCH" />
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorXanhVl"
+            android:text="X" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +58,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lnlGhiChuThem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -45,8 +75,101 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-<!--    <ListView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/lvDanhmucChiTieu"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rdGroup"
+            android:layout_below="@+id/lnlGhiChuThem">
+
+            <RadioButton
+                android:id="@+id/rdbLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Lương"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:id="@+id/rdbThuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thưởng"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:id="@+id/rdbKhoanThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khoản thu"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:id="@+id/rdbHoaDon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hóa Đơn"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:id="@+id/rdbThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:onClick="onRadioButtonClicked"
+                tools:ignore="OnClick" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+            <Button
+                android:background="@color/colorXanhVl"
+                android:layout_weight="2"
+                android:id="@+id/btnNgayThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tvNgayChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD/MM/YY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/btnViChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ví của bạn"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
